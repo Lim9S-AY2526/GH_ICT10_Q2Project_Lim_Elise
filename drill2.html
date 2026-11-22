@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+  <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+  <title>ICT Club Verification Drill 2</title>
+  <link rel="stylesheet" href="drill.css">
+</head>
+<body>
+
+  <nav class="top-nav">
+  <a class="nav-brand" href="index.html">Q2 ICT SHOWCASE</a>
+  <div class="nav-links">
+    <a href="index.html">Meet the Creator</a>
+    <a href="seatwork1.html">Seatwork 1 (Atlas)</a>
+    <a href="drill2.html">Drill 2 (Club)</a>
+    <a href="skillstest.html">Skills Test (Elements)</a>
+  </div>
+</nav>
+
+  <div class="card">
+    <h2>ICT Club</h2>
+    <div class="subtitle">Candidate Verification System</div>
+
+    <form onsubmit="return false;">
+      <div class="form-group">
+        <label for="first_name">First Name</label>
+        <input type="text" id="first_name" placeholder="e.g. Juan">
+      </div>
+
+      <div class="form-group">
+        <label for="last_name">Last Name</label>
+        <input type="text" id="last_name" placeholder="e.g. Dela Cruz">
+      </div>
+
+      <button type="button" class="btn" py-click="verify_candidate">
+        Verify Candidate
+      </button>
+    </form>
+
+    <!-- Result Area -->
+    <div id="result">SYSTEM READY</div>
+  </div>
+
+  <!-- PyScript External -->
+  <py-script src="drill2.py"></py-script>
+
+</body>
+</html>
